@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView t1 = (TextView) findViewById(R.id.textView);
-        t1.setText(Integer.toString(random.nextInt()));
+        t1.setText(Integer.toString(random.nextInt(101)));
         Button btnForv = (Button) findViewById(R.id.buttonForvard);
         Button btnBack = (Button) findViewById(R.id.buttonBack);
         final Intent intent = new Intent(MainActivity.this,MainActivity.class);
